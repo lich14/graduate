@@ -1,0 +1,28 @@
+2016-11-25 21:57:04,329 [11] INFO  ZECS.Schedule.ScheduleSimulate - Simulation Terminated at : 2016/11/25 21:57:04
+2016-11-25 21:57:04,333 [11] INFO  ZECS.Schedule.ScheduleSimulate - Total time used in Seconds : 540.8999377
+2016-11-25 21:57:04,340 [11] INFO  ZECS.Schedule.ScheduleSimulate - DeadLock Detection Times : 15660
+2016-11-25 21:57:04,345 [11] INFO  ZECS.Schedule.ScheduleSimulate - Max DeadLock Detection Time : 0.0390022
+2016-11-25 21:57:04,355 [11] INFO  ZECS.Schedule.ScheduleSimulate - Avg DeadLock Detection Time : 0.0185959551213276
+2016-11-25 21:57:04,361 [11] INFO  ZECS.Schedule.ScheduleSimulate - Mid DeadLock Detection Time : 0.0080005
+
+2016-11-30 08:01:59,585 [7] INFO  ZECS.Schedule.ScheduleSimulate - Loading From Excel Succesfully Finished
+2016-11-30 08:03:31,516 [1] INFO  ZECS.Schedule.ScheduleSimulate - Simulation Started at : 2016/11/30 8:03:31
+2016-11-30 08:03:32,078 [9] INFO  ZECS.Schedule.ECSSchedule - ******ECSSchedule start.****** Project directory is D:\bzc\SSWPF_0.3.0_NewTrafficControl\Bin_Debug\Project
+2016-11-30 08:03:32,078 [9] INFO  ZECS.Schedule.ECSSchedule - Database_ECS_STSMS.ConnectString is: Data Source=10.28.251.18;Initial Catalog=ecs;Persist Security Info=True;User ID=ECSUser;Password=ecsuser
+2016-12-03 09:02:37,012 [9] INFO  ZECS.Schedule.ScheduleSimulate - Simulation Terminated at : 2016/12/3 9:02:37
+2016-12-03 09:02:37,012 [9] INFO  ZECS.Schedule.ScheduleSimulate - Total time used in Seconds : 262745.4954552
+2016-12-03 09:02:37,027 [9] INFO  ZECS.Schedule.ScheduleSimulate - DeadLock Detection Times : 3153202
+2016-12-03 09:02:37,027 [9] INFO  ZECS.Schedule.ScheduleSimulate - Max DeadLock Detection Time : 0.0156001
+2016-12-03 09:02:37,059 [9] INFO  ZECS.Schedule.ScheduleSimulate - Avg DeadLock Detection Time : 0.07613923985452
+2016-12-03 09:02:37,059 [9] INFO  ZECS.Schedule.ScheduleSimulate - Mid DeadLock Detection Time : 0
+
+
+2016-12-05 15:02:31,912 [7] INFO  ZECS.Schedule.ScheduleSimulate - Simulation Started at : 2016/12/5 15:02:31 For 5 Days
+2016-12-05 15:02:32,521 [10] INFO  ZECS.Schedule.ECSSchedule - ******ECSSchedule start.****** Project directory is D:\bzc\SSWPF_0.3.0_NewTrafficControl\Bin_Debug\Project
+2016-12-05 15:02:32,521 [10] INFO  ZECS.Schedule.ECSSchedule - Database_ECS_STSMS.ConnectString is: Data Source=10.28.251.18;Initial Catalog=ecs;Persist Security Info=True;User ID=ECSUser;Password=ecsuser
+2016-12-05 16:36:03,674 [10] INFO  ZECS.Schedule.ScheduleSimulate - Simulation Terminated at : 2016/12/5 16:36:03
+2016-12-05 16:36:03,674 [10] INFO  ZECS.Schedule.ScheduleSimulate - Total time used in Seconds : 5611.7615726
+2016-12-05 16:36:03,908 [10] INFO  ZECS.Schedule.ScheduleSimulate - DeadLock Detection Times : 548175
+2016-12-05 16:36:03,908 [10] INFO  ZECS.Schedule.ScheduleSimulate - Max DeadLock Detection Time : 0.0156001
+2016-12-05 16:36:03,955 [10] INFO  ZECS.Schedule.ScheduleSimulate - Avg DeadLock Detection Time : 3.06210746568163E-05
+2016-12-05 16:36:03,955 [10] INFO  ZECS.Schedule.ScheduleSimulate - Mid DeadLock Detection Time : 0

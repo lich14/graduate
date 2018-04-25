@@ -1,0 +1,7 @@
+D:\work_zh\SharpSimuXM\SSWPF\SolverTester\bin\Debug\SSWPF.SolverTester.exe.config
+D:\work_zh\SharpSimuXM\SSWPF\Bin_Debug\SSWPF.SolverTester.exe.config
+D:\work_zh\SharpSimuXM\SSWPF\Bin_Debug\SSWPF.SolverTester.exe
+D:\work_zh\SharpSimuXM\SSWPF\Bin_Debug\SSWPF.SolverTester.pdb
+D:\work_zh\SharpSimuXM\SSWPF\SolverTester\obj\x86\Debug\SSWPF.SolverTester.csprojResolveAssemblyReference.cache
+D:\work_zh\SharpSimuXM\SSWPF\SolverTester\obj\x86\Debug\SSWPF.SolverTester.exe
+D:\work_zh\SharpSimuXM\SSWPF\SolverTester\obj\x86\Debug\SSWPF.SolverTester.pdb

@@ -1,0 +1,7 @@
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\x86\Release\SSWPF.Define.csprojResolveAssemblyReference.cache
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\x86\Release\SimFrames\InfoFrame.baml
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\x86\Release\SimFrames\ViewFrame.baml
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\x86\Release\SimFrames\InfoFrame.g.cs
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\x86\Release\SimFrames\ViewFrame.g.cs
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\x86\Release\SSWPF.Define_MarkupCompile.cache
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\x86\Release\SSWPF.Define.g.resources

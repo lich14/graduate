@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48EBC4CF-B666-4C5E-B230-C0D84B74221A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZECS.Schedule.Algorithm</RootNamespace>
+    <AssemblyName>ZECS.Schedule.Algorithm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Bin_Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ZECS.Schedule.Algorithm.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ZECS.Schedule.Algorithm.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ILOG.Concert">
+      <HintPath>..\Bin\ILOG.Concert.dll</HintPath>
+    </Reference>
+    <Reference Include="ILOG.CPLEX">
+      <HintPath>..\Bin\ILOG.CPLEX.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZECS.Common.DBAccess">
+      <HintPath>..\Bin\ZECS.Common.DBAccess.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="basic\AdjacencyMatrix.cs" />
+    <Compile Include="basic\CommonAlgorithm.cs" />
+    <Compile Include="basic\MatchingEntity.cs" />
+    <Compile Include="basic\PartialOrderTable.cs" />
+    <Compile Include="basic\SimpleIntMatrix.cs" />
+    <Compile Include="basic\SolveLPWithCplex.cs" />
+    <Compile Include="basic\SquareMatrix.cs" />
+    <Compile Include="basic\WeightMatrixOfBigraphEntity.cs" />
+    <Compile Include="Algorithm\AppointQuestionHungaryAlgorithm.cs" />
+    <Compile Include="Model_1\CntrStructureEntity.cs" />
+    <Compile Include="Model_1\ContainerEntity.cs" />
+    <Compile Include="Model_1\EffStructureEntity.cs" />
+    <Compile Include="Model_1\StowageSlotLocationEntity.cs" />
+    <Compile Include="Model_1\QCEntity.cs" />
+    <Compile Include="Model_1\VesselContainerEntity.cs" />
+    <Compile Include="Model_1\VesselContainerGroupEntity.cs" />
+    <Compile Include="Model_1\VesselCWPEntity.cs" />
+    <Compile Include="Model_1\VesselMaskEntity.cs" />
+    <Compile Include="Model_1\YardBlockEntity.cs" />
+    <Compile Include="Model_1\YardContainerEntity.cs" />
+    <Compile Include="Algorithm\MaxMatchHungaryAlgorithm.cs" />
+    <Compile Include="Algorithm\MaxMatchingAlgorithm.cs" />
+    <Compile Include="Algorithm\WeightedMatchingAlgorithm.cs" />
+    <Compile Include="Model_2\GeneralSchedule_Model_2.cs" />
+    <Compile Include="Model_2\GeneralSchedule_Model_2_Old.cs" />
+    <Compile Include="Model_2\ScheduleModel2.cs" />
+    <Compile Include="Schedule_Algo.cs" />
+    <Compile Include="utilities\VmsAlgoLib.cs" />
+    <Compile Include="TimeEstimate\DevTimeEstimate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model_1\GeneralSchedule_Model_1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZECS.Schedule.DB\ZECS.Schedule.DB.csproj">
+      <Project>{1344E0A6-E6A8-422E-BB0C-2F96D6D0A3EB}</Project>
+      <Name>ZECS.Schedule.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZECS.Schedule.Define\ZECS.Schedule.Define.csproj">
+      <Project>{1571830A-D69C-4B97-AC5F-002E9804568E}</Project>
+      <Name>ZECS.Schedule.Define</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZECS.Schedule.VmsalgoAdapter\ZECS.Schedule.VmsAlgoAdapter.csproj">
+      <Project>{5F2CE0F8-0DFB-498D-980B-AED43DD68226}</Project>
+      <Name>ZECS.Schedule.VmsAlgoAdapter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

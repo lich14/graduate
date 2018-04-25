@@ -1,0 +1,2 @@
+D:\work_zh\SharpSimuXM\SSWPF\SolverTester\bin\Debug\SolverTester.exe.config
+D:\work_zh\SharpSimuXM\SSWPF\SolverTester\bin\Debug\SSWPF.SolverTester.exe.config

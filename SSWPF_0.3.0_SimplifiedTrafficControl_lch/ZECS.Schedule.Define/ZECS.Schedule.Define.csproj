@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1571830A-D69C-4B97-AC5F-002E9804568E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZECS.Schedule.Define</RootNamespace>
+    <AssemblyName>ZECS.Schedule.Define</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Bin_Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\Bin_Debug\ZECS.Schedule.Define.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\Bin\ZECS.Schedule.Define.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XMLParser, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\XMLParser.dll</HintPath>
+    </Reference>
+    <Reference Include="ZECS.Common.Define, Version=3.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\ZECS.Common.Define.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Helper.cs" />
+    <Compile Include="DBDefine\CiTOS\AGV_ReqMessage.cs" />
+    <Compile Include="DBDefine\CiTOS\AGV_ReqUpdateCHE.cs" />
+    <Compile Include="DBDefine\CiTOS\AGV_ReqUpdateJob.cs" />
+    <Compile Include="DBDefine\CiTOS\AGV_ResJob.cs" />
+    <Compile Include="DBDefine\CiTOS\AGV_ResMessage.cs" />
+    <Compile Include="DBDefine\CiTOS\AGV_Task.cs" />
+    <Compile Include="DBDefine\CiTOS\ASC_ReqMessage.cs" />
+    <Compile Include="DBDefine\CiTOS\ASC_ReqUpdateCHE.cs" />
+    <Compile Include="DBDefine\CiTOS\ASC_ReqUpdateJob.cs" />
+    <Compile Include="DBDefine\CiTOS\ASC_ResJob.cs" />
+    <Compile Include="DBDefine\CiTOS\ASC_ResMessage.cs" />
+    <Compile Include="DBDefine\CiTOS\ASC_Task.cs" />
+    <Compile Include="DBDefine\CiTOS\ECS_Container_Move_Log.cs" />
+    <Compile Include="DBDefine\CiTOS\ROCS_Task.cs" />
+    <Compile Include="DBDefine\CiTOS\STS_ReqMessage.cs" />
+    <Compile Include="DBDefine\CiTOS\STS_ReqUpdateCHE.cs" />
+    <Compile Include="DBDefine\CiTOS\STS_ReqUpdateJob.cs" />
+    <Compile Include="DBDefine\CiTOS\STS_ResJob.cs" />
+    <Compile Include="DBDefine\CiTOS\STS_ResMessage.cs" />
+    <Compile Include="DBDefine\CiTOS\STS_Task.cs" />
+    <Compile Include="DBDefine\CiTOS\TaskStatus.cs" />
+    <Compile Include="DBDefine\BlockInfo\BlockInfo.cs" />
+    <Compile Include="DBDefine\Schedule\Miscellaneous.cs" />
+    <Compile Include="DBDefine\CiTOS\ScheduleStatus.cs" />
+    <Compile Include="DBDefine\Schedule\ThreadDBData.cs" />
+    <Compile Include="DBDefine\YardMap\YardMap.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Common\MainAppBase.cs" />
+    <Compile Include="ProjectConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchedulePath.cs" />
+    <Compile Include="DBDefine\Schedule\DBSchedule.cs" />
+    <Compile Include="Common\ThreadBase.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

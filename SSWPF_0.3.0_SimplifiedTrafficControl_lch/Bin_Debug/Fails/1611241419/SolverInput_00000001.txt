@@ -1,0 +1,8 @@
+2016/11/24 14:13:30
+
+Input Relation Graph in AGV IDs :
+
+Detect AGV: 959	Claim AGV: 951	
+Detect AGV: 967	Claim AGV: 951	
+
+

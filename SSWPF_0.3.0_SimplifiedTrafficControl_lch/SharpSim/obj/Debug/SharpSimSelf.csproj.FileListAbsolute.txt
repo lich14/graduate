@@ -1,0 +1,5 @@
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\obj\Debug\SharpSimSelf.csprojResolveAssemblyReference.cache
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\bin\Debug\SharpSimSelf.dll
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\bin\Debug\SharpSimSelf.pdb
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\obj\Debug\SharpSimSelf.dll
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\obj\Debug\SharpSimSelf.pdb

@@ -1,0 +1,424 @@
+﻿<Window x:Class="SSWPF.InfoFrame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InfoFrame" Height="785" Width="929" Name="InfoWindow">
+    <Grid Name="MainGrid">
+        <TabControl Height="749" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="907" SelectionChanged="tabControl1_SelectionChanged">
+            <TabItem Header="TOS-SCH-STS" Name="TOS_SCH_STS">
+                <Grid>
+                    <Label Content="STS__ResJob" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="l_STSResJob" VerticalAlignment="Top" Width="78" />
+                    <Label Content="STS__Task" Height="28" HorizontalAlignment="Left" Margin="0,240,0,0" Name="l_STSTask" VerticalAlignment="Top" />
+                    <ListView Height="198" HorizontalAlignment="Left" Margin="0,34,0,0" Name="lv_STSResJob" VerticalAlignment="Top" Width="900" 
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ID, Mode=OneWay}" Width="60" Header="ID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="60" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="60" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="110" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding QUAY_ID, Mode=OneWay}" Width="50" Header="QuayID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding YARD_ID, Mode=OneWay}" Width="50" Header="YardID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="70" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_ID, Mode=OneWay}" Width="70" Header="OrderID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_ID, Mode=OneWay}" Width="70" Header="CommID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY, Mode=OneWay}" Width="40" Header="fBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="40" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_TIER, Mode=OneWay}" Width="40" Header="fTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY, Mode=OneWay}" Width="40" Header="tBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="40" Header="tLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_TIER, Mode=OneWay}" Width="40" Header="tTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding VERSION, Mode=OneWay}" Width="40" Header="Ver"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <ListView Height="202" HorizontalAlignment="Left" Margin="0,274,0,0" Name="lv_STSTask" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ID, Mode=OneWay}" Width="60" Header="ID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Task.ID, Mode=OneWay}" Width="80" Header="ResJob(ID)"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Order.ORDER_ID, Mode=OneWay}" Width="70" Header="Order(ID)"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TaskState, Mode=OneWay}" Width="70" Header="TaskState"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ContainerLocation, Mode=OneWay}" Width="110" Header="ContLoc"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding LastContainerLocation, Mode=OneWay}" Width="110" Header="LastContLoc"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TaskSpreaderPosition, Mode=OneWay}" Width="110" Header="TaskSpreaderPos"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TaskProcess, Mode=OneWay}" Width="110" Header="TaskProc"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="{Binding ElementName=lv_STSResJob,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,0,5,0" Name="l_STSResJobSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_STSTask,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,240,5,0" Name="l_STSTaskSum" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="TOS-SCH-ASC" Name="TOS_SCH_ASC">
+                <Grid>
+                    <Label Content="ASC__ResJob" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="l_ASCResJob" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,34,0,0" Name="lv_ASCResJob" VerticalAlignment="Top" Width="900" 
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ID, Mode=OneWay}" Width="60" Header="ID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="60" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="60" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="60" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="110" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding YARD_ID, Mode=OneWay}" Width="60" Header="YardID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="60" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="70" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY, Mode=OneWay}" Width="40" Header="fBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="40" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_TIER, Mode=OneWay}" Width="40" Header="fTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY, Mode=OneWay}" Width="40" Header="tBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="40" Header="tLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_TIER, Mode=OneWay}" Width="40" Header="tTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding VERSION, Mode=OneWay}" Width="40" Header="Ver"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="ASC__Task" Height="28" HorizontalAlignment="Left" Margin="0,240,0,0" Name="l_ASCTask" VerticalAlignment="Top" />
+                    <ListView Height="203" HorizontalAlignment="Left" Margin="0,274,0,0" Name="lv_ASCTask" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ID, Mode=OneWay}" Width="60" Header="ID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Task.ID, Mode=OneWay}" Width="80" Header="ResJob(ID)"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Order.ORDER_ID, Mode=OneWay}" Width="80" Header="Order(ID)"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TaskState, Mode=OneWay}" Width="80" Header="TaskState"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TaskProcess, Mode=OneWay}" Width="80" Header="TaskProc"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="{Binding ElementName=lv_ASCResJob,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,0,5,0" Name="l_ASCResJobSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_ASCTask,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,240,5,0" Name="l_ASCTaskSum" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="TOS-SCH-AGV" Name="TOS_SCH_AGV">
+                <Grid>
+                    <Label Content="AGV__ResJob" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="l_AGVResJob" VerticalAlignment="Top" />
+                    <Label Content="AGV__Task" Height="28" HorizontalAlignment="Left" Margin="0,240,0,0" Name="l_AGVTask" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,34,0,0" Name="lv_AGVResJob" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ID, Mode=OneWay}" Width="60" Header="ID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="60" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="60" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="60" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="120" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding QUAY_ID, Mode=OneWay}" Width="60" Header="QuayID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="60" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding YARD_ID, Mode=OneWay}" Width="60" Header="YardID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="70" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY, Mode=OneWay}" Width="40" Header="fBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="40" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_TIER, Mode=OneWay}" Width="40" Header="fTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY, Mode=OneWay}" Width="40" Header="tBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="40" Header="tLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_TIER, Mode=OneWay}" Width="40" Header="tTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding VERSION, Mode=OneWay}" Width="40" Header="Ver"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,274,0,0" Name="lv_AGVTask" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ID, Mode=OneWay}" Width="60" Header="ID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Task.ID, Mode=OneWay}" Width="80" Header="ResJob(ID)"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Order.ORDER_ID, Mode=OneWay}" Width="80" Header="Order(ID)"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TaskState, Mode=OneWay}" Width="80" Header="TaskState"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="{Binding ElementName=lv_AGVResJob,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,0,5,0" Name="l_AGVResJobSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_AGVTask,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,240,5,0" Name="l_AGVTaskSum" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="TOS-SCH-WORK" Name="TOS_SCH_WORK">
+                <Grid>
+                    <Label Content="WorkQueue" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="l_WQ" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,34,0,0" Name="lv_WorkQueue" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding WORK_QUEUE, Mode=OneWay}" Width="100" Header="WorkQueue"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding QC_ID, Mode=OneWay}" Width="60" Header="QCID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding WQ_SEQ, Mode=OneWay}" Width="60" Header="WQSeq"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding MOVE_KIND, Mode=OneWay}" Width="80" Header="MoveKind"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding VESSEL_BAY, Mode=OneWay}" Width="80" Header="VesBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ABOVE_BELOW, Mode=OneWay}" Width="40" Header="AB"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding WQ_STATUS, Mode=OneWay}" Width="100" Header="WQStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding START_TIME, Mode=OneWay}" Width="120" Header="StartTime"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding END_TIME, Mode=OneWay}" Width="120" Header="EndTime"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding UPDATED, Mode=OneWay}" Width="120" Header="Updated"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="WorkInstruction" Height="28" HorizontalAlignment="Left" Margin="0,240,0,0" Name="l_WI" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,274,0,0" Name="lv_WorkInstruction" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="120" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding WORK_QUEUE, Mode=OneWay}" Width="100" Header="WorkQueue"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding POINT_OF_WORK, Mode=OneWay}" Width="90" Header="PointOfWork"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding MOVE_KIND, Mode=OneWay}" Width="80" Header="MoveKind"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ISO, Mode=OneWay}" Width="50" Header="ISO"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_WI_REF, Mode=OneWay}" Width="80" Header="WIRef"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="60" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding LIFT_REFERENCE, Mode=OneWay}" Width="100" Header="LiftRef"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding MOVE_STAGE, Mode=OneWay}" Width="100" Header="MoveStage"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding UPDATED, Mode=OneWay}" Width="120" Header="Updated"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="BerthStatus" Height="28" HorizontalAlignment="Left" Margin="0,480,0,0" Name="l_BerthStatus" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,514,0,0" Name="lv_BerthStatus" VerticalAlignment="Top" Width="897"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding VESSEL_VISIT, Mode=OneWay}" Width="100" Header="VesVisit"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding VESSEL_NAME, Mode=OneWay}" Width="150" Header="VesName"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding VESSEL_VISIT_PHASE, Mode=OneWay}" Width="120" Header="VesVisitPhrase"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding UPDATED, Mode=OneWay}" Width="120" Header="Updated"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="{Binding ElementName=lv_WorkQueue,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,0,5,0" Name="l_WorkQueueSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_WorkInstruction,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,240,5,0" Name="l_WorkInstructionSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_BerthStatus,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,480,5,0" Name="l_BerthStatusSum" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="SCH-ECS-STS" Name="SCH_ECS_STS">
+                <Grid>
+                    <Label Content="STS__Order" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="l_STSOrder" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,34,0,0" Name="lv_STSOrder" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_ID, Mode=OneWay}" Width="50" Header="OID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_VERSION, Mode=OneWay}" Width="30" Header="OV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_VERSION, Mode=OneWay}" Width="30" Header="CV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="60" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="55" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="55" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="50" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="120" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding VESSEL_ID, Mode=OneWay}" Width="60" Header="VesID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding QUAY_ID, Mode=OneWay}" Width="60" Header="QuayID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="70" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY, Mode=OneWay}" Width="40" Header="fBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="40" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_TIER, Mode=OneWay}" Width="40" Header="fTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY, Mode=OneWay}" Width="40" Header="tBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="40" Header="tLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_TIER, Mode=OneWay}" Width="40" Header="tTier"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="STS__Command" Height="28" HorizontalAlignment="Left" Margin="0,240,0,0" Name="l_STSCommand" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,274,0,0" Name="lv_STSCommand" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_ID, Mode=OneWay}" Width="50" Header="CID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_VERSION, Mode=OneWay}" Width="30" Header="OV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_VERSION, Mode=OneWay}" Width="30" Header="CV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="60" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="55" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="55" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="50" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="120" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding VESSEL_ID, Mode=OneWay}" Width="60" Header="VesID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding QUAY_ID, Mode=OneWay}" Width="60" Header="QuayID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="80" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY, Mode=OneWay}" Width="40" Header="fBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="40" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_TIER, Mode=OneWay}" Width="40" Header="fTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY, Mode=OneWay}" Width="40" Header="tBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="40" Header="tLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_TIER, Mode=OneWay}" Width="40" Header="tTier"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="STS__Status" Height="28" HorizontalAlignment="Left" Margin="0,480,0,0" Name="l_STSStatus" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,514,0,0" Name="lv_STSStatus" VerticalAlignment="Top" Width="897"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding QC_ID, Mode=OneWay}" Width="60" Header="QCID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding nQCPosition, Mode=OneWay}" Width="60" Header="QCPos"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding nAGVCountMin, Mode=OneWay}" Width="80" Header="nAGVMin"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding nAGVCountMax, Mode=OneWay}" Width="80" Header="nAGVMax"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding UPDATED, Mode=OneWay}" Width="120" Header="Updated"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="{Binding ElementName=lv_STSOrder,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,0,5,0" Name="l_STSOrderSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_STSCommand,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,240,5,0" Name="l_STSCommandSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_STSStatus,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,480,5,0" Name="l_STSStatusSum" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="SCH-ECS-ASC" Name="SCH_ECS_ASC">
+                <Grid>
+                    <Label Content="ASC__Order" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="l_ASCOrder" VerticalAlignment="Top" />
+                    <Label Content="ASC__Command" Height="28" HorizontalAlignment="Left" Margin="0,240,0,0" Name="l_ASCCommand" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,34,0,0" Name="lv_ASCOrder" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_ID, Mode=OneWay}" Width="50" Header="OID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_VERSION, Mode=OneWay}" Width="30" Header="OV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_VERSION, Mode=OneWay}" Width="30" Header="CV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="60" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="55" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="55" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="50" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="110" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="55" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding YARD_ID, Mode=OneWay}" Width="50" Header="YardID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BLOCK, Mode=OneWay}" Width="50" Header="fBlock"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY, Mode=OneWay}" Width="40" Header="fBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="40" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_TIER, Mode=OneWay}" Width="40" Header="fTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BLOCK, Mode=OneWay}" Width="50" Header="tBlock"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY, Mode=OneWay}" Width="40" Header="tBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="40" Header="tLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_TIER, Mode=OneWay}" Width="40" Header="tTier"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,274,0,0" Name="lv_ASCCommand" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_ID, Mode=OneWay}" Width="60" Header="CommID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_VERSION, Mode=OneWay}" Width="30" Header="OV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_VERSION, Mode=OneWay}" Width="30" Header="CV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="50" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="55" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="55" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="50" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="120" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding YARD_ID, Mode=OneWay}" Width="50" Header="YardID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="65" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BLOCK, Mode=OneWay}" Width="45" Header="fBlock"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY, Mode=OneWay}" Width="40" Header="fBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="40" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_TIER, Mode=OneWay}" Width="40" Header="fTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BLOCK, Mode=OneWay}" Width="45" Header="tBlock"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY, Mode=OneWay}" Width="40" Header="tBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="40" Header="tLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_TIER, Mode=OneWay}" Width="40" Header="tTier"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="ASC__Status" Height="28" HorizontalAlignment="Left" Margin="0,480,0,0" Name="l_ASCStatus" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,514,0,0" Name="lv_ASCStatus" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="80" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding WORK_STATUS, Mode=OneWay}" Width="100" Header="WorkStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_GKEY, Mode=OneWay}" Width="100" Header="OGKey"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_GKEY, Mode=OneWay}" Width="100" Header="CGKey"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding LOCATION, Mode=OneWay}" Width="100" Header="Loc"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="120" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding UPDATED, Mode=OneWay}" Width="120" Header="Updated"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="{Binding ElementName=lv_ASCOrder,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,0,5,0" Name="l_ASCOrderSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_ASCCommand,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,240,5,0" Name="l_ASCCommandSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_ASCStatus,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,480,5,0" Name="l_ASCStatusSum" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="SCH-ECS-AGV" Name="SCH_ECS_AGV">
+                <Grid>
+                    <Label Content="AGV__Order" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="l_AGVOrder" VerticalAlignment="Top" />
+                    <Label Content="AGV__Command" Height="28" HorizontalAlignment="Left" Margin="0,240,0,0" Name="l_AGVCommand" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,34,0,0" Name="lv_AGVOrder" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_ID, Mode=OneWay}" Width="60" Header="OID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_VERSION, Mode=OneWay}" Width="30" Header="OV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_VERSION, Mode=OneWay}" Width="30" Header="CV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="60" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="60" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="60" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="60" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="120" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="70" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BLOCK, Mode=OneWay}" Width="50" Header="fBlock"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY_TYPE, Mode=OneWay}" Width="60" Header="fBayType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="50" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BLOCK, Mode=OneWay}" Width="50" Header="tBlock"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY_TYPE, Mode=OneWay}" Width="60" Header="tBayType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="50" Header="tLane"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,274,0,0" Name="lv_AGVCommand" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_ID, Mode=OneWay}" Width="60" Header="CID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_VERSION, Mode=OneWay}" Width="30" Header="OV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_VERSION, Mode=OneWay}" Width="30" Header="CV"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_ID, Mode=OneWay}" Width="60" Header="JobID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_TYPE, Mode=OneWay}" Width="60" Header="JobType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_LINK, Mode=OneWay}" Width="60" Header="JobLink"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="60" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID, Mode=OneWay}" Width="120" Header="ContID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding JOB_STATUS, Mode=OneWay}" Width="80" Header="JobStatus"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BLOCK, Mode=OneWay}" Width="50" Header="fBlock"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_BAY_TYPE, Mode=OneWay}" Width="60" Header="fBayType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="50" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BLOCK, Mode=OneWay}" Width="50" Header="tBlock"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY_TYPE, Mode=OneWay}" Width="60" Header="tBayType"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="50" Header="tLane"/>
+                                <!--<GridViewColumn DisplayMemberBinding="{Binding FROM_BAY, Mode=OneWay}" Width="40" Header="fBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_LANE, Mode=OneWay}" Width="40" Header="fLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding FROM_TIER, Mode=OneWay}" Width="40" Header="fTier"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_BAY, Mode=OneWay}" Width="40" Header="tBay"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_LANE, Mode=OneWay}" Width="40" Header="tLane"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding TO_TIER, Mode=OneWay}" Width="40" Header="tTier"/>-->
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="AGV__Status" Height="28" HorizontalAlignment="Left" Margin="0,480,0,0" Name="label1" VerticalAlignment="Top" />
+                    <ListView Height="200" HorizontalAlignment="Left" Margin="0,514,0,0" Name="lv_AGVStatus" VerticalAlignment="Top" Width="900"  
+                              GridViewColumnHeader.Click="Column_Click" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding CHE_ID, Mode=OneWay}" Width="40" Header="CheID"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORDER_GKEY, Mode=OneWay}" Width="60" Header="OGKey"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding COMMAND_GKEY, Mode=OneWay}" Width="60" Header="CGKey"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding LOCATION, Mode=OneWay}" Width="60" Header="Loc"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding NEXT_LOCATION, Mode=OneWay}" Width="60" Header="NextLoc"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding REFERENCE_ID_1, Mode=OneWay}" Width="60" Header="RefID1"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding REFERENCE_ID_2, Mode=OneWay}" Width="60" Header="RefID2"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID_1, Mode=OneWay}" Width="110" Header="ContID1"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding CONTAINER_ID_2, Mode=OneWay}" Width="110" Header="ContID2"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding ORIENTATION, Mode=OneWay}" Width="50" Header="Orient"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding LOCATION_X, Mode=OneWay}" Width="40" Header="LocX"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding LOCATION_Y, Mode=OneWay}" Width="40" Header="LocY"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding RUNNING_HOURS, Mode=OneWay}" Width="70" Header="RunHours"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding BATTERY_STATE, Mode=OneWay}" Width="80" Header="BatteryState"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="{Binding ElementName=lv_AGVOrder,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,0,5,0" Name="l_AGVOrderSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_AGVCommand,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,240,5,0" Name="l_AGVCommandSum" VerticalAlignment="Top" />
+                    <Label Content="{Binding ElementName=lv_AGVStatus,Path=Items.Count}" Width ="50" Height="28" HorizontalAlignment="Right" Margin="0,480,5,0" Name="l_AGVStatusSum" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="SCH-ORDERSEQ" Name="SCH_ORDERSEQ">
+                <Grid>
+                    <DataGrid AutoGenerateColumns="False" Height="705" HorizontalAlignment="Left" Margin="6,6,0,0" Name="dg_OrderTable" VerticalAlignment="Top" Width="885" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,432 @@
+2016/11/24 14:13:30
+
+AGV : 951 Reserve Transponder ID : 3651
+
+
+AGVRoutes :
+
+AGV : 951
+Lanes : 	67	92	124
+Transponders : 	<3645>	<3648>	(3666)	(3757)	(3814)	(3851)	(3939)	(4027)	(4094)	(4161)	(4222)	(4304)	(4386)	(4468)	(4539)	(4646)	(4711)	(4775)	(4815)	(4855)	(4916)	(4977)	(5038)	(5081)	(5148)	(5209)	(5270)	(5307)	(5344)	(5405)	(5466)	(5527)	(5564)	(5601)	(5662)	(5659)
+
+AGV : 952
+Lanes : 	74	47
+Transponders : 	<4447>	<4450>	(4368)	(4286)	(4204)	(4143)	(4076)	(4009)	(3921)	(3833)	(3796)	(3739)	(3648)	(3557)	(3481)	(3413)	(3156)	(2899)	(2896)	(2890)	(2886)	(2882)	(2878)	(2874)	(2870)	(2866)	(2862)	(2858)	(2854)	(2850)	(2846)	(2842)	(2838)	(2834)	(2830)	(2826)	(2822)	(2818)	(2814)	(2810)
+
+AGV : 953
+Lanes : 	72	101
+Transponders : 	<4283>	<4286>
+
+AGV : 954
+Lanes : 	46	104
+Transponders : 	<2561>	(2569)	(3666)	(3757)	(3814)	(3851)	(3939)	(4027)	(4094)	(4161)	(4222)	(4304)	(4386)	(4468)	(4539)
+
+AGV : 955
+Lanes : 	73	93
+Transponders : 	<4365>	<4368>	(4286)	(4204)	(4143)	(4076)	(4009)	(3921)	(3833)	(3796)	(3739)
+
+AGV : 956
+Lanes : 	70	97	113
+Transponders : 	<4006>	<4009>	(4027)	(4094)	(4161)	(4222)	(4304)	(4386)	(4468)	(4539)	(4646)	(4711)	(4775)	(4815)	(4855)	(4916)	(4977)	(5038)	(5081)	(5078)
+
+AGV : 957
+Lanes : 	76	106	121
+Transponders : 	<4690>	<4693>	(4711)	(4775)	(4815)	(4855)	(4916)	(4977)	(5038)	(5081)	(5148)	(5209)	(5270)	(5307)	(5344)	(5405)	(5466)	(5527)	(5524)
+
+AGV : 958
+Lanes : 	79	111	126	89
+Transponders : 	<4956>	<4959>	(5035)	(5078)	(5206)	(5341)	(5524)	(5659)	(5720)
+
+AGV : 959
+Lanes : 	80	45
+Transponders : 	<5017>	(4956)	(4895)	(4834)	(4794)	(4754)	(4690)	(4625)	(4518)	(4447)	(4365)	(4283)	(4201)	(4140)	(4073)	(4006)	(3918)	(3830)	(3793)	(3736)	(3645)	(3554)	(3478)	(3410)	(3404)	(3400)	(3396)	(3392)	(3388)	(3384)	(3380)	(3376)	(3372)	(3368)	(3364)	(3360)	(3356)	(3352)	(3348)	(3344)	(3340)	(2818)	(2561)
+
+AGV : 960
+Lanes : 	81	103
+Transponders : 	<5127>	(5060)	(5017)	(4956)	(4895)	(4834)	(4794)	(4754)	(4690)	(4625)	(4518)	(4447)	(4450)
+
+AGV : 961
+Lanes : 	77	107	118
+Transponders : 	<4754>	<4757>	(4775)	(4815)	(4855)	(4916)	(4977)	(5038)	(5081)	(5148)	(5209)	(5270)	(5307)	(5344)	(5341)
+
+AGV : 962
+Lanes : 	75	105	112
+Transponders : 	<4625>	<4628>	(4646)	(4711)	(4775)	(4815)	(4855)	(4916)	(4977)	(5038)	(5035)
+
+AGV : 963
+Lanes : 	82	115	125
+Transponders : 	<5188>	<5191>	(5206)	(5209)	(5270)	(5307)	(5344)	(5405)	(5466)	(5527)	(5564)	(5601)	(5662)	(5720)
+
+AGV : 964
+Lanes : 	83	51
+Transponders : 	<5249>	<5252>	(5191)	(5130)	(5063)	(5020)	(4959)	(4898)	(4837)	(4797)	(4757)	(4693)	(4628)	(4521)	(4450)	(4368)	(4286)	(4204)	(4143)	(4076)	(4009)	(3921)	(3833)	(3796)	(3739)	(3648)	(3557)	(3481)	(3413)	(3156)	(2899)	(2896)	(2890)	(2886)	(2882)	(2878)	(2874)	(2870)	(2866)	(2862)	(2858)	(2854)	(2850)	(2846)	(2842)	(2838)	(2834)	(2830)	(2826)	(2822)	(2818)	(2814)	(2810)	(2806)	(2802)	(2798)	(2794)
+
+AGV : 965
+Lanes : 	84	52
+Transponders : 	<5384>	<5387>	(5326)	(5289)	(5252)	(5191)	(5130)	(5063)	(5020)	(4959)	(4898)	(4837)	(4797)	(4757)	(4693)	(4628)	(4521)	(4450)	(4368)	(4286)	(4204)	(4143)	(4076)	(4009)	(3921)	(3833)	(3796)	(3739)	(3648)	(3557)	(3481)	(3413)	(3156)	(2899)	(2896)	(2890)	(2886)	(2882)	(2878)	(2874)	(2870)	(2866)	(2862)	(2858)	(2854)	(2850)	(2846)	(2842)	(2838)	(2834)	(2830)	(2826)	(2822)	(2818)	(2814)	(2810)	(2806)	(2802)	(2798)	(2794)
+
+AGV : 966
+Lanes : 	85	110
+Transponders : 	<5445>	(5384)	(5323)	(5286)	(5249)	(5188)	(5127)	(5060)	(5017)	(4956)	(4895)	(4898)
+
+AGV : 967
+Lanes : 	86	43
+Transponders : 	(5445)	(5384)	(5323)	(5286)	(5249)	(5188)	(5127)	(5060)	(5017)	(4956)	(4895)	(4834)	(4794)	(4754)	(4690)	(4625)	(4518)	(4447)	(4365)	(4283)	(4201)	(4140)	(4073)	(4006)	(3918)	(3830)	(3793)	(3736)	(3645)	(3554)	(3478)	(3410)	(3404)	(3400)	(3396)	(3392)	(3388)	(3384)	(3380)	(3376)	(3372)	(3368)	(3364)	(3360)	(3356)	(3352)	(3348)	(3344)	(3340)	(2826)	(2569)
+
+AGV : 968
+Lanes : 	87	114
+Transponders : 	(5387)	(5326)	(5289)	(5252)	(5191)	(5130)
+
+
+Intersected and Reserved TPIDs :
+
+TP ID : 1839;	Resv AGV : 954
+RouteAGVs (Passed): 	954
+TP ID : 2043;	Resv AGV : 954
+RouteAGVs (Passed): 	954
+TP ID : 2300;	Resv AGV : 954
+RouteAGVs (Passed): 	954
+TP ID : 2557;	Resv AGV : 954
+RouteAGVs (Passed): 	954
+TP ID : 2561;	Resv AGV : 954;	Intersected
+RouteAGVs (Passed): 	954	959
+TP ID : 2569;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	954	967
+TP ID : 2794;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 2798;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 2802;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 2806;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 2810;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2814;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2818;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	959	964	965
+TP ID : 2822;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2826;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965	967
+TP ID : 2830;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2834;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2838;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2842;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2846;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2850;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2854;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2858;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2862;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2866;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2870;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2874;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2878;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2882;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2886;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2890;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2896;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 2899;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 3156;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 3340;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3344;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3348;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3352;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3356;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3360;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3364;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3368;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3372;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3376;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3380;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3384;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3388;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3392;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3396;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3400;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3404;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3410;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3413;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 3478;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3481;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 3554;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3557;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	964	965
+TP ID : 3643;	Resv AGV : 951
+RouteAGVs (Passed): 	951
+TP ID : 3645;	Resv AGV : 951;	Intersected
+RouteAGVs (Passed): 	951	959	967
+TP ID : 3648;	Resv AGV : 951;	Intersected
+RouteAGVs (Passed): 	951	952	964	965
+TP ID : 3651;	Resv AGV : 951
+RouteAGVs (Passed): 	951
+TP ID : 3666;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954
+TP ID : 3736;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3739;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	955	964	965
+TP ID : 3757;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954
+TP ID : 3793;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3796;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	955	964	965
+TP ID : 3814;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954
+TP ID : 3830;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3833;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	955	964	965
+TP ID : 3851;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954
+TP ID : 3918;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 3921;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	955	964	965
+TP ID : 3939;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954
+TP ID : 4004;	Resv AGV : 956
+RouteAGVs (Passed): 	956
+TP ID : 4006;	Resv AGV : 956;	Intersected
+RouteAGVs (Passed): 	956	959	967
+TP ID : 4009;	Resv AGV : 956;	Intersected
+RouteAGVs (Passed): 	952	955	956	964	965
+TP ID : 4027;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954	956
+TP ID : 4073;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 4076;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	955	964	965
+TP ID : 4094;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954	956
+TP ID : 4140;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 4143;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	955	964	965
+TP ID : 4161;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954	956
+TP ID : 4201;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	967
+TP ID : 4204;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	952	955	964	965
+TP ID : 4222;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954	956
+TP ID : 4281;	Resv AGV : 953
+RouteAGVs (Passed): 	953
+TP ID : 4283;	Resv AGV : 953;	Intersected
+RouteAGVs (Passed): 	953	959	967
+TP ID : 4286;	Resv AGV : 953;	Intersected
+RouteAGVs (Passed): 	952	953	955	964	965
+TP ID : 4304;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954	956
+TP ID : 4363;	Resv AGV : 955
+RouteAGVs (Passed): 	955
+TP ID : 4365;	Resv AGV : 955;	Intersected
+RouteAGVs (Passed): 	955	959	967
+TP ID : 4368;	Resv AGV : 955;	Intersected
+RouteAGVs (Passed): 	952	955	964	965
+TP ID : 4386;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954	956
+TP ID : 4445;	Resv AGV : 952
+RouteAGVs (Passed): 	952
+TP ID : 4447;	Resv AGV : 952;	Intersected
+RouteAGVs (Passed): 	952	959	960	967
+TP ID : 4450;	Resv AGV : 952;	Intersected
+RouteAGVs (Passed): 	952	960	964	965
+TP ID : 4468;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954	956
+TP ID : 4518;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	960	967
+TP ID : 4521;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 4539;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	954	956
+TP ID : 4623;	Resv AGV : 962
+RouteAGVs (Passed): 	962
+TP ID : 4625;	Resv AGV : 962;	Intersected
+RouteAGVs (Passed): 	959	960	962	967
+TP ID : 4628;	Resv AGV : 962;	Intersected
+RouteAGVs (Passed): 	962	964	965
+TP ID : 4646;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	962
+TP ID : 4688;	Resv AGV : 957
+RouteAGVs (Passed): 	957
+TP ID : 4690;	Resv AGV : 957;	Intersected
+RouteAGVs (Passed): 	957	959	960	967
+TP ID : 4693;	Resv AGV : 957;	Intersected
+RouteAGVs (Passed): 	957	964	965
+TP ID : 4711;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	957	962
+TP ID : 4752;	Resv AGV : 961
+RouteAGVs (Passed): 	961
+TP ID : 4754;	Resv AGV : 961;	Intersected
+RouteAGVs (Passed): 	959	960	961	967
+TP ID : 4757;	Resv AGV : 961;	Intersected
+RouteAGVs (Passed): 	961	964	965
+TP ID : 4775;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	957	961	962
+TP ID : 4794;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	960	967
+TP ID : 4797;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 4815;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	957	961	962
+TP ID : 4834;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	960	967
+TP ID : 4837;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 4855;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	957	961	962
+TP ID : 4895;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	959	960	966	967
+TP ID : 4898;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965	966
+TP ID : 4916;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	957	961	962
+TP ID : 4954;	Resv AGV : 958
+RouteAGVs (Passed): 	958
+TP ID : 4956;	Resv AGV : 958;	Intersected
+RouteAGVs (Passed): 	958	959	960	966	967
+TP ID : 4959;	Resv AGV : 958;	Intersected
+RouteAGVs (Passed): 	958	964	965
+TP ID : 4977;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	957	961	962
+TP ID : 5015;	Resv AGV : 959
+RouteAGVs (Passed): 	959
+TP ID : 5017;	Resv AGV : 959;	Intersected
+RouteAGVs (Passed): 	959	960	966	967
+TP ID : 5020;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 5035;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	958	962
+TP ID : 5038;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	957	961	962
+TP ID : 5060;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	960	966	967
+TP ID : 5063;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965
+TP ID : 5078;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	956	958
+TP ID : 5081;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	956	957	961
+TP ID : 5125;	Resv AGV : 960
+RouteAGVs (Passed): 	960
+TP ID : 5127;	Resv AGV : 960;	Intersected
+RouteAGVs (Passed): 	960	966	967
+TP ID : 5130;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	964	965	968
+TP ID : 5148;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	957	961
+TP ID : 5186;	Resv AGV : 963
+RouteAGVs (Passed): 	963
+TP ID : 5188;	Resv AGV : 963;	Intersected
+RouteAGVs (Passed): 	963	966	967
+TP ID : 5191;	Resv AGV : 963;	Intersected
+RouteAGVs (Passed): 	963	964	965	968
+TP ID : 5206;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	958	963
+TP ID : 5209;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	957	961	963
+TP ID : 5247;	Resv AGV : 964
+RouteAGVs (Passed): 	964
+TP ID : 5249;	Resv AGV : 964;	Intersected
+RouteAGVs (Passed): 	964	966	967
+TP ID : 5252;	Resv AGV : 964;	Intersected
+RouteAGVs (Passed): 	964	965	968
+TP ID : 5270;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	957	961	963
+TP ID : 5286;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	966	967
+TP ID : 5289;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	965	968
+TP ID : 5307;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	957	961	963
+TP ID : 5323;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	966	967
+TP ID : 5326;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	965	968
+TP ID : 5341;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	958	961
+TP ID : 5344;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	957	961	963
+TP ID : 5382;	Resv AGV : 965
+RouteAGVs (Passed): 	965
+TP ID : 5384;	Resv AGV : 965;	Intersected
+RouteAGVs (Passed): 	965	966	967
+TP ID : 5387;	Resv AGV : 965;	Intersected
+RouteAGVs (Passed): 	965	968
+TP ID : 5405;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	957	963
+TP ID : 5443;	Resv AGV : 966
+RouteAGVs (Passed): 	966
+TP ID : 5445;	Resv AGV : 966;	Intersected
+RouteAGVs (Passed): 	966	967
+TP ID : 5466;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	957	963
+TP ID : 5504;	Resv AGV : 967
+RouteAGVs (Passed): 	967
+TP ID : 5506;	Resv AGV : 967
+RouteAGVs (Passed): 	967
+TP ID : 5524;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	957	958
+TP ID : 5527;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	957	963
+TP ID : 5564;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	963
+TP ID : 5601;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	963
+TP ID : 5639;	Resv AGV : 968
+RouteAGVs (Passed): 	968
+TP ID : 5641;	Resv AGV : 968
+RouteAGVs (Passed): 	968
+TP ID : 5644;	Resv AGV : 968
+RouteAGVs (Passed): 	968
+TP ID : 5659;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	958
+TP ID : 5662;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	951	963
+TP ID : 5720;	Not Reserved;	Intersected
+RouteAGVs (Passed): 	958	963

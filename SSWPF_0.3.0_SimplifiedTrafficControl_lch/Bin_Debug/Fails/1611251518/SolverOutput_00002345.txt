@@ -1,0 +1,49 @@
+2016/11/25 15:18:25
+
+IsDeadlockFound :True
+
+Strong Connect Components in Cycle Seg IDs :
+
+SCC ID :0
+Detect AGV: 967	
+
+SCC ID :1
+Detect AGV: 964	
+
+SCC ID :2
+Detect AGV: 968	Claim AGV: 954	
+Detect AGV: 953	Claim AGV: 968	
+Detect AGV: 954	Claim AGV: 953	
+
+SCC ID :3
+Detect AGV: 960	
+
+SCC ID :4
+Detect AGV: 952	
+
+SCC ID :5
+Detect AGV: 966	
+
+SCC ID :6
+Detect AGV: 951	
+
+SCC ID :7
+Detect AGV: 959	
+
+SCC ID :8
+Detect AGV: 957	
+
+SCC ID :9
+Detect AGV: 965	
+
+SCC ID :10
+Detect AGV: 962	
+
+SCC ID :11
+Detect AGV: 961	
+
+SCC ID :12
+Detect AGV: 963	
+
+
+

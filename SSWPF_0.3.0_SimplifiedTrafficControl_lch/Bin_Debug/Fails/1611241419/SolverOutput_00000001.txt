@@ -1,0 +1,15 @@
+2016/11/24 14:13:30
+
+Strong Connect Components in Cycle Seg IDs :
+
+SCC ID :0
+Detect AGV: 951	
+
+SCC ID :1
+Detect AGV: 959	
+
+SCC ID :2
+Detect AGV: 967	
+
+
+

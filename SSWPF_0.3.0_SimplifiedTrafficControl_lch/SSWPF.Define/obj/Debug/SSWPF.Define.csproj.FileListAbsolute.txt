@@ -1,0 +1,13 @@
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\Debug\SSWPF.Define.csprojResolveAssemblyReference.cache
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\SSWPF.Define.dll
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\SSWPF.Define.pdb
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\log4net.dll
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\SharpSim.dll
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\ZECS.Schedule.Define.dll
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\XMLParser.dll
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\ZECS.Common.Define.dll
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\NExcel.dll
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\ZECS.Schedule.Define.pdb
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\bin\Debug\SharpSim.pdb
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\Debug\SSWPF.Define.dll
+D:\work_zh\SharpSimuXM\SSWPF\SSWPF.Define\obj\Debug\SSWPF.Define.pdb

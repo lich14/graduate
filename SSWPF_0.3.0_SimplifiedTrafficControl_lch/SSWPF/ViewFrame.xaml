@@ -1,0 +1,6 @@
+﻿<Window x:Class="SSWPF.ViewFrame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ViewFrame" HorizontalAlignment="Left" VerticalAlignment="Top" SizeToContent="WidthAndHeight" Margin="0,0,50,50" WindowStartupLocation="Manual" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Loaded="Window_Loaded" BorderBrush="Black" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="315" d:DesignWidth="400" MinWidth="400" MinHeight="200">
+    <Grid Name="MainGrid"></Grid>
+</Window>

@@ -1,0 +1,16 @@
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\bin\Debug\SharpSim.dll
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\bin\Debug\SharpSim.pdb
+D:\work_zh\SharpSimuXM\SSWPF_UIFrameBackup\SharpSimSelf\bin\Debug\SharpSim.dll
+D:\work_zh\SharpSimuXM\SSWPF_UIFrameBackup\SharpSimSelf\bin\Debug\SharpSim.pdb
+D:\work_zh\SharpSimuXM\SSWPF_UIFrameBackup\SharpSimSelf\bin\Debug\NExcel.dll
+D:\work_zh\SharpSimuXM\SSWPF_UIFrameBackup\SharpSimSelf\obj\Debug\SharpSim.csprojResolveAssemblyReference.cache
+D:\work_zh\SharpSimuXM\SSWPF_UIFrameBackup\SharpSimSelf\obj\Debug\SharpSim.dll
+D:\work_zh\SharpSimuXM\SSWPF_UIFrameBackup\SharpSimSelf\obj\Debug\SharpSim.pdb
+D:\work_zh\SharpSimuXM\Debug\SharpSim.dll
+D:\work_zh\SharpSimuXM\Debug\SharpSim.pdb
+D:\work_zh\SharpSimuXM\Bin_Debug\SharpSim.dll
+D:\work_zh\SharpSimuXM\Bin_Debug\SharpSim.pdb
+D:\work_zh\SharpSimuXM\SSWPF\Bin_Debug\SharpSim.dll
+D:\work_zh\SharpSimuXM\SSWPF\Bin_Debug\SharpSim.pdb
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\obj\Debug\SharpSim.dll
+D:\work_zh\SharpSimuXM\SSWPF\SharpSimSelf\obj\Debug\SharpSim.pdb

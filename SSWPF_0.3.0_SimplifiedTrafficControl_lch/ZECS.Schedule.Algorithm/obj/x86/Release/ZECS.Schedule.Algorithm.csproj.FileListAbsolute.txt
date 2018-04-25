@@ -1,0 +1,5 @@
+D:\IT_AUTO\ECS XiaMen 1.5\ECSSchedule\Source\ZECS.Schedule.Algorithm\obj\x86\Release\ZECS.Schedule.Algorithm.csprojResolveAssemblyReference.cache
+D:\IT_AUTO\ECS XiaMen 1.5\ECSSchedule\Source\ZECS.Schedule.Algorithm\obj\x86\Release\ZECS.Schedule.Algorithm.dll
+D:\IT_AUTO\ECS XiaMen 1.5\ECSSchedule\Source\ZECS.Schedule.Algorithm\obj\x86\Release\ZECS.Schedule.Algorithm.pdb
+D:\work_zh\SharpSimuXM\SSWPF\ZECS.Schedule.Algorithm\obj\x86\Release\ZECS.Schedule.Algorithm.csprojResolveAssemblyReference.cache
+D:\work_zh\SharpSimuXM\SSWPF\ZECS.Schedule.Algorithm\obj\x86\Release\ZECS.Schedule.Algorithm.pdb
